@@ -1,0 +1,72 @@
+html, body {
+	display: flex; /*expands items to fill avaiable free space, or shrinks them to prevent overflow*/
+	align-items: center; /* prperty specifies the default alignment for items inside the flexible container*/
+	justify-content: center;/* aligns the flexiable contain's items when the items don't use all the space on the main-axis horizontally */
+	height: 100%; /* sets the height of the element*/
+	margin: 0px;/* used to create space around elements, outside of any of the defined borders*/
+	padding: 0px; /* to generate space around the element's content inside of any defined borders*/
+	font-family: 'Open Sans', sans-serif; /* font of the type*/
+}
+
+.name {
+	font-family: 'Roboto', sans-serif; /* font of the type*/
+	margin-bottom: 2px; /* property sets the bottom margin of an element */
+}
+
+.wrapper {
+	background-color: #B3E5FA; /* color of the background of the box*/
+	max-width: 50%; /* max width of the element*/
+	display: flex; /* exspanse items to fill any aviavble space of the container*/
+	flex-direction: row; /* set the direction of the flexible items inside the div element */
+	height: 80%; /* height of the element*/
+}
+
+.left, .right {
+	background-color: #F9F2E3; /* background color of two boxes*/
+	margin: 4px; /* width of the middle colubmn */
+	max-width: 50%; /*max width of both of the inside of the orange boxes*/
+	flex: 1; /* specifies how a flexible itme will grow or shrink so as to fit the space available in its flexible container*/
+	display: flex; /* exspanse items to fill any aviavble space of the container*/
+	flex-direction: column; /* set the direction of the flexible items inside the div element */
+	justify-content: center; /* aligns the flexiable contain's items when the items don't use all the space on the main-axis horizontally */
+}
+
+.left {
+	align-items: center; /* centers the items in the left orange box */
+	justify-content: center; /* aligns the flexiable contain's items when the items don't use all the space on the main-axis horizontally */
+}
+
+.right {
+	align-items: center;/* centers links in right orange box*/
+	justify-content: center; /* aligns the flexiable contain's items when the items don't use all the space on the main-axis horizontally */
+}
+
+.bio {
+	text-align: center; /* centers the text */
+	padding-left: 5px; /* space betwwen the edge of the box and the text*/
+	padding-right: 5px;/* space between the text and the edge of the box */
+}
+
+.profile-picture {
+	border-radius: 50%; /* turns square pic to circle pic */
+}
+
+.social-links {
+	list-style: none;
+	padding-left: 0px; /* space between the text of the edge of the box*/
+	font-size: 18px; /* size of the font*/
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 8px; /* the space the right link has between the left link*/
+}
+
+.social-links a {
+	text-decoration: none; /* specifies the decor added to text*/
+	padding: 4px; /* properties are used to generate space around an element's content inside any of defined borders*/
+}
+
+.social-links a:hover {
+	background-color: rgba(0, 0, 0, 0.1); /* comes up when mouse hovers over links, light grey */
+}
